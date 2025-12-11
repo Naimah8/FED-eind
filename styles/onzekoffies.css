@@ -7,7 +7,7 @@
 .background {
     background-image: url(../images/onzekoffies-background.png);
     background-size: cover;
-    position: static;
+    position: static; /* snap ik niet so goed */
     width: 100%;
     min-height: 60vh;
 }
