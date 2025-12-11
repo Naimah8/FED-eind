@@ -1,21 +1,26 @@
+/*********************/
+/******HAMBURGER******/
+/*********************/
+// begrijp ik matig //
+
 var deButton = document.querySelector("nav button");
 
-// stap 2: laat de menu-button luisteren naar kliks en voer dan een functie uit
 deButton.onclick = toggleMenu;
 
-// stap 3: voeg in de functie een class toe aan de nav
+
 function toggleMenu() {  
-  // zoek de nav op
   var deNav = document.querySelector("nav");
-  // voeg een class toe aan de nav
-  // en verwijder die weer bij nogmaals klikken
-  // toggle
   deNav.classList.toggle("toonMenu");
 }
 
 
+
+/*********************/
+/*******SNEEUW********/
+/*********************/
+// SNAP IK NIET //
+
 if (window.matchMedia) {
-    // Check if the dark-mode Media-Query matches
     if(window.matchMedia('(prefers-color-scheme: dark)').matches){
 
 
@@ -120,3 +125,26 @@ window.addEventListener('load', initSnow);
     span.classlist.add('lightmode');
     
 }
+
+/*********************/
+/*******HEADER********/
+/*********************/
+// begrijp ik niet //
+/* Bron:chatgpt.com - Hoe voeg ik een transition toe aan de header als ik scroll */
+
+let lastScroll = 0;
+const navbar = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll > lastScroll) {
+    // naar beneden scroll → verbergen
+    navbar.style.transform = "translateY(-100%)";
+  } else {
+    // naar boven scroll → tonen
+    navbar.style.transform = "translateY(0)";
+  }
+
+  lastScroll = currentScroll;
+});

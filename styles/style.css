@@ -67,7 +67,6 @@
 	  --footer:#1e3932;
 	  --header:#ffffff;
     --header-lijn:#dcd9d9;
-
   }
 
   @media (prefers-color-scheme: dark) {
@@ -91,9 +90,6 @@
 	  --footer:#006242;
 	  --header:#ffffff;
     --header-lijn:#dcd9d9;
-    
-
-
     }
 
   }
@@ -172,6 +168,8 @@
 	top:0;
   z-index: 10;
   border-bottom: 0.05em solid var(--header-lijn);
+  transition: transform 0.4s ease;
+  /* Bron:chatgpt.com - Hoe voeg ik een transition toe aan de header als ik scroll */
   }
 
   header nav {
