@@ -235,29 +235,19 @@ Naimah -
 
   -Keyboard: Het is nu wel duidelijk genoeg waar de focus op staat door kleur contrast de focus heeft een duidelijke rode kleur inplaats van het licht groenen
 
-  -Mobile and touch: De website is extreem goed voor mobiel gebruik, en gebruikt grote duidelijke knoppen met genoeg afstand: 
-  <img src="readme-images/mobile-and-touch-screenshot1.png" alt="mobile screen met een grote knop en witruimte">
+  -Mobile and touch: De website is nogsteeds  goed voor mobiel gebruik, en gebruikt grote duidelijke knoppen met genoeg afstand: 
 
-  -Headings: De website maakt gebruik van headings in een duidelijke volgordere, volgends de regels en zonder een heading level te skippen.
+  -Headings: De website maakt nogsteeds gebruik van headings in een duidelijke volgordere, volgends de regels en zonder een heading level te skippen.
 
-  -Lists: De website maakt regelmatig gebruik van list items.
+  -Lists: De website maakt altijd gebruik van list items.
 
-  -Images: Er zijn geen images zonder doel op deze website, maar maakt wel gebruikt van een alt bij img's. Alleen klopt deze alt niet altijd zoals bij het plaatje van de redvelvet latte waar "holliday campain" staat: 
-  <img src="readme-images/images-screenshot1.png" alt="Geselecteerd plaatje van redvelvet latte">
+  -Images: Maakt wel gebruikt van een alt bij img's, en alle alts kloppen nu wel. Eerder waren er alts zonder goede betekenis, dat is nu niet het geval. : 
 
   -Media: De website heeft geen Videos of audios.
 
-  -Controls: Er wordt vrijwel altijd gebruik gebruik gemaakt van een a element bij een link, deze zijn dan ook te herkennen als link. Er wordt zelden gebruik gemaakt van een button element voor een button dit gebruikt maar bij één button op de homepagina: 
-  <img src="readme-images/controls-screenshot1.png" alt="Button op de website wordt aangegeven als button"> <img src="readme-images/controls-screenshot2.png" alt="Button op de website wordt niet aangegeven als button">
+  -Controls: Er wordt nu altijd gebruik gemaakt van een a element bij een link, deze zijn dan ook te herkennen als link.
 
-  De links openen dan ook niet op een ander tablat.
-  -Appearance: Darkmode wordt niet gesupport op de website. Ook kan de text niet groter dan het standaard formaat.
-
-  -Animation: Er zijn bijna geen animations op de website, alleen kleine subtiele dingen zoals het uitklappen van het hamburger menu wat geleidelijk gaat. 
-
-  -Color contrast: Er is een duidelijk verschil tussen achtergrond en tekst op de website, op een donkere achtergrond wordt bijvoorbeeld gebruik gemaakt van witte tekst en andersom:
-hfbbhjebhjbrbfhjbef
-
+  -Appearance: Darkmode nu wel gesupport op de website.
 </details>
 
 
@@ -341,11 +331,20 @@ Naimah:
 
   ### Je uitkomst - karakteristiek screenshots:
 
+  pagina 1: 
+    <img src="readme-images/screenshot-fullscreen-home.png" width="375px" alt="screenshot volledige homepagina">
+  
+  pagina 1: 
+    <img src="readme-images/screenshot-fullscreen-onzekoffies.png" width="375px" alt="screenshot volledige onzekoffies pagina">
+
+
+
+
 
   ### Dit ging goed/Heb ik geleerd: 
   Wat goed ging was de footer, ondanks ik de footer een lang heb uitgesteld ben ik trots op hoe hij is geworden. Ik heb 4 varianten van mijn footers op verschillende breedtes.
 
-  <img src="readme-images/screenshot-variant-footer-1.png" width="375px" alt="footer 1 smallscreen">
+  <img src="readme-images/screenshot-footer-1.png" width="375px" alt="footer 1 smallscreen">
   <img src="readme-images/screenshot-variant-footer-2.png" width="375px" alt="footer 2 mediumscreen">
   <img src="readme-images/screenshot-variant-footer-3.png" width="375px" alt="footer 3 biggerscreen">
   <img src="readme-images/screenshot-variant-footer-4.png" width="375px" alt="footer 4 bigscreen">
@@ -373,12 +372,9 @@ Naimah:
   Dit is die van starbucks: 
    <img src="readme-images/screenshot-summary-menu-starbucks.png" width="375px" alt="screenshot summary in hamburger menu Starbucks">
    
+  Ik probeerde ook een header animatie toe te voegen maar daardoor ging mijn hele site stuk!
 
 </details>
-
-
-
-
 
 ## Bronnenlijst
 
