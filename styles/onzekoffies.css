@@ -1,0 +1,1075 @@
+/* main onzekoffie */
+
+/*********************/
+/*****DIV 1 MAIN******/
+/*********************/
+
+.background {
+    background-image: url(../images/onzekoffies-background.png);
+    background-size: cover;
+    position: static;
+    width: 100%;
+    min-height: 60vh;
+
+  }
+
+  main div{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr auto 1.5em auto auto;
+    padding:0.8em;
+    padding-bottom: 3em;
+    gap:1em;
+  }
+
+  main div img {
+    margin: 0;
+    width: 100%;
+
+  }
+
+  main div h1 {
+    grid-row-start: 4;
+    font-size: 0.8em;
+    font-family: "Starbucks";
+    font-weight: 400;
+    text-align: left;
+    color: var(--text-footer);
+  }
+
+  main div a:nth-of-type(1){
+    grid-row-start: 5;
+    background-color: var(--button-primary);
+	border-radius: 10em;
+	font-size: 70%;
+    text-align: center;
+	font-family: "Starbucks";
+	text-decoration-line: none;
+	color: var(--text-primary);
+    font-weight: 600;
+    padding: 0.8em;
+
+  }
+
+  main div a:nth-of-type(2) {
+    grid-row-start: 6;
+	border-radius: 10em;
+    border: 0.01em solid;
+    border-color: var(--button-primary);
+	font-size: 70%;
+    text-align: center;
+	font-family: "Starbucks";
+	text-decoration-line: none;
+	color: var(--text-footer);
+    font-weight: 600;
+    padding: 0.8em;
+
+  }
+
+  main {
+    margin:0;
+    padding:0;
+    list-style-type:"";
+    display:grid;
+    grid-template-columns:1fr;
+    /* grid-template-rows: 0.7fr auto 1fr 1fr; */
+    background-color: var(--main-background-secondary);
+
+    /* background-image:linear-gradient(180deg in hsl, #590202, #971717, #b92424); */
+  }
+
+
+  @media (width > 770px) {
+    main {
+        display: grid;
+        grid-template-columns: 0.6fr 0.6fr 0.6fr;
+        grid-template-rows: auto auto;
+        gap: 2em;
+    }
+    
+    main div {
+        grid-column: 1;
+        height: 100vh;
+        padding:2em
+    }
+
+
+    main div a:nth-of-type(2) {
+        margin-bottom: 4em;
+    }
+
+    .background {
+        grid-column: 1 / 2;
+        grid-row: 1/ -1;
+        height:100%;
+        min-height:101vh;
+        background-size:cover;
+        background-position: center;
+        position: sticky;
+        top: 0;
+
+    }
+
+    main section {
+        grid-column: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section {
+        display:grid;
+        
+    }
+  }
+
+
+
+/*********************/
+/******SECTION 1******/
+/*********************/
+
+section:nth-of-type(1){
+    /* background-color:var(--section-background-primary); */
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3em;
+    margin-top:2em;
+
+}
+
+  section:nth-of-type(1) h2 {
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: 400;
+    font-family: "Starbucks";
+    margin-left: 1.5em;
+    margin-bottom: 0;
+    color: var(--text-primary);
+
+}
+
+  section:nth-of-type(1) p {
+    text-align: left;
+    margin: 2.50em;
+    margin-top: 1em;
+    font-family: "Starbucks";
+    color: var(--text-primary);
+    font-size: 0.6em;
+    font-weight: 400;
+    opacity: 60%;
+}
+
+section:nth-of-type(1) a {
+    color: var(--text-tertairy);
+    opacity: 100%;
+}
+
+@media (width > 770px) {
+    section:nth-of-type(1) {
+        padding-top: 2em;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        align-self: start;
+        margin-top: 0;
+    }
+
+    section:nth-of-type(1) h2 { 
+        font-size: 1.5em;
+        font-weight: 600;
+        margin-left: 0.9em;
+    }
+}
+
+
+
+/*********************/
+/******SECTION 2******/
+/*********************/
+
+section:nth-of-type(2){
+    /* background-color:var(--section-background-primary); */
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3em;
+    margin-top:2em;
+
+}
+
+  section:nth-of-type(2) h2 {
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: 400;
+    font-family: "Starbucks";
+    margin-left: 1.5em;
+    margin-bottom: 0;
+    color: var(--text-primary);
+
+}
+
+  section:nth-of-type(2) p {
+    text-align: left;
+    margin: 2.50em;
+    margin-top: 1em;
+    font-family: "Starbucks";
+    color: var(--text-primary);
+    font-size: 0.6em;
+    font-weight: 400;
+    opacity: 60%;
+}
+
+section:nth-of-type(2) a {
+    color: var(--text-tertairy);
+    opacity: 100%;
+}
+
+@media (width > 770px) {
+    section:nth-of-type(2) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        margin-top: 0;
+
+    }
+
+    section:nth-of-type(2) h2 { 
+        font-size: 1em;
+        font-weight: 600;
+        margin-left: 1.4em;
+
+    }
+}
+
+/*********************/
+/******SECTION 3******/
+/*********************/
+
+section:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3em;
+    font-family: "Starbucks";
+    padding: 2em 2em 0 2em;
+    max-height: fit-content;
+    
+
+}
+
+section:nth-of-type(3) img { order: 1; }  
+section:nth-of-type(3) h3 { order: 2; }
+section:nth-of-type(3) a  { order: 3; }
+
+section:nth-of-type(3) img {
+    border-radius: 0.3em;
+    width: 100%;
+    height: auto;
+
+}
+
+section:nth-of-type(3) h3 {
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: var(--text-primary);
+    grid-row-start:2;
+
+}
+
+section:nth-of-type(3) a {
+    border-radius: 5em;
+    border: 0.01em solid;
+    text-align: center;
+    color: var(--text-tertairy);
+    text-decoration-line: none;
+    padding: 0.78em;
+    font-size: 0.7em;
+    margin-top: 2em;
+    grid-row-start:4;
+}
+
+@media (width > 770px) {
+    section:nth-of-type(3) {
+        grid-column-start: 2;
+        padding: 2em 0.1em 0 2em;
+        
+    }
+}
+
+
+
+/*********************/
+/******SECTION 4******/
+/*********************/
+
+section:nth-of-type(4) {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3em;
+    font-family: "Starbucks";
+    padding: 2em 2em 0 2em;
+    
+
+}
+
+section:nth-of-type(4) img { order: 1; }  
+section:nth-of-type(4) h3 { order: 2; }
+section:nth-of-type(4) a  { order: 3; }
+
+section:nth-of-type(4) img {
+    border-radius: 0.3em;
+    width: 100%;
+    height: auto;
+
+}
+
+section:nth-of-type(4) h3 {
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: var(--text-primary);
+
+}
+
+section:nth-of-type(4) a {
+    border-radius: 5em;
+    border: 0.01em solid;
+    text-align: center;
+    color: var(--text-tertairy);
+    text-decoration-line: none;
+    padding: 0.78em;
+    font-size: 0.7em;
+    margin-top: 2em;
+}
+
+
+@media (width > 770px) {
+    section:nth-of-type(4) {
+        grid-column-start: 3;
+        padding: 2em 2em 0 0.1em;
+    }
+}
+
+/*********************/
+/******SECTION 5******/
+/*********************/
+
+section:nth-of-type(5) {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3em;
+    font-family: "Starbucks";
+    padding: 2em 2em 0 2em;
+    width: 100%;
+    height: auto;
+    
+
+}
+
+section:nth-of-type(5) img { order: 1; }  
+section:nth-of-type(5) h3 { order: 2; }
+section:nth-of-type(5) a  { order: 3; }
+
+section:nth-of-type(5) img {
+    border-radius: 0.3em;
+    width: 100%;
+    height: auto;
+
+}
+
+section:nth-of-type(5) h3 {
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: var(--text-primary);
+
+}
+
+section:nth-of-type(5) a {
+    border-radius: 5em;
+    border: 0.01em solid;
+    text-align: center;
+    color: var(--text-tertairy);
+    text-decoration-line: none;
+    padding: 0.78em;
+    font-size: 0.7em;
+    margin-top: 2em;
+}
+
+@media (width > 770px) {
+    section:nth-of-type(5) {
+        grid-column-start: 2;
+        padding: 2em 0.1em 0 2em;
+    }
+}
+
+/*********************/
+/******SECTION 6******/
+/*********************/
+
+section:nth-of-type(6) {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3em;
+    font-family: "Starbucks";
+    padding: 2em 2em 0 2em;
+    
+
+}
+
+section:nth-of-type(6) img { order: 1; }  
+section:nth-of-type(6) h3 { order: 2; }
+section:nth-of-type(6) a  { order: 3; }
+
+section:nth-of-type(6) img {
+    border-radius: 0.3em;
+    width: 100%;
+    height: auto;
+
+}
+
+section:nth-of-type(6) h3 {
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: var(--text-primary);
+
+}
+
+section:nth-of-type(6) a {
+    border-radius: 5em;
+    border: 0.01em solid;
+    text-align: center;
+    color: var(--text-tertairy);
+    text-decoration-line: none;
+    padding: 0.78em;
+    font-size: 0.7em;
+    margin-top: 2em;
+}
+
+
+@media (width > 770px) {
+    section:nth-of-type(6) {
+        grid-column-start: 3;
+        padding: 2em 2em 0 0.1em;
+    }
+}
+
+/*********************/
+/******SECTION 7******/
+/*********************/
+
+section:nth-of-type(7) {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3em;
+    font-family: "Starbucks";
+    padding: 2em 2em 0 2em;
+
+}
+
+section:nth-of-type(7) img { order: 1; }  
+section:nth-of-type(7) h3 { order: 2; }
+section:nth-of-type(7) a  { order: 3; }
+
+section:nth-of-type(7) img {
+    border-radius: 0.3em;
+    width: 100%;
+    height: auto;
+
+}
+
+section:nth-of-type(7) h3 {
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: var(--text-primary);
+    grid-row-start:2;
+
+}
+
+section:nth-of-type(7) a {
+    border-radius: 5em;
+    border: 0.01em solid;
+    text-align: center;
+    color: var(--text-tertairy);
+    text-decoration-line: none;
+    padding: 0.78em;
+    font-size: 0.7em;
+    margin-top: 2em;
+}
+
+@media (width > 770px) {
+    section:nth-of-type(7) {
+        grid-column-start: 2;
+        padding: 2em 0.1em 0 2em;
+    }
+}
+
+/*********************/
+/******SECTION 8******/
+/*********************/
+
+section:nth-of-type(8) {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3em;
+    font-family: "Starbucks";
+    padding: 2em 2em 0 2em;
+    
+
+}
+
+section:nth-of-type(8) img { order: 1; }  
+section:nth-of-type(8) h3 { order: 2; }
+section:nth-of-type(8) a  { order: 3; }
+
+section:nth-of-type(8) img {
+    border-radius: 0.3em;
+    width: 100%;
+    height: auto;
+
+}
+
+section:nth-of-type(8) h3 {
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: var(--text-primary);
+
+}
+
+section:nth-of-type(8) a {
+    border-radius: 5em;
+    border: 0.01em solid;
+    text-align: center;
+    color: var(--text-tertairy);
+    text-decoration-line: none;
+    padding: 0.78em;
+    font-size: 0.7em;
+    margin-top: 2em;
+}
+
+
+@media (width > 770px) {
+    section:nth-of-type(8) {
+        grid-column-start: 3;
+        padding: 2em 2em 0 0.1em;
+    }
+}
+
+
+/*********************/
+/******SECTION 9******/
+/*********************/
+
+section:nth-of-type(9) {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3em;
+    font-family: "Starbucks";
+    padding: 2em 2em 0 2em;
+    
+
+}
+
+section:nth-of-type(9) img { order: 1; }  
+section:nth-of-type(9) h3 { order: 2; }
+section:nth-of-type(9) a  { order: 3; }
+
+section:nth-of-type(9) img {
+    border-radius: 0.3em;
+    width: 100%;
+    height: auto;
+
+}
+
+section:nth-of-type(9) h3 {
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: var(--text-primary);
+
+}
+
+section:nth-of-type(9) a {
+    border-radius: 5em;
+    border: 0.01em solid;
+    text-align: center;
+    color: var(--text-tertairy);
+    text-decoration-line: none;
+    padding: 0.78em;
+    font-size: 0.7em;
+    margin-top: 2em;
+}
+
+
+@media (width > 770px) {
+    section:nth-of-type(9) {
+        grid-column-start: 2;
+        padding: 2em 0.1em 0 2em;
+    }
+}
+
+
+/*********************/
+/*****SECTION 10******/
+/*********************/
+
+section:nth-of-type(10) {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3em;
+    font-family: "Starbucks";
+    padding: 2em 2em 0 2em;
+    
+
+}
+
+section:nth-of-type(10) img { order: 1; }  
+section:nth-of-type(10) h3 { order: 2; }
+section:nth-of-type(10) a  { order: 3; }
+
+section:nth-of-type(10) img {
+    border-radius: 0.3em;
+    width: 100%;
+    height: auto;
+
+}
+
+section:nth-of-type(10) h3 {
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: var(--text-primary);
+
+}
+
+section:nth-of-type(10) a {
+    border-radius: 5em;
+    border: 0.01em solid;
+    text-align: center;
+    color: var(--text-tertairy);
+    text-decoration-line: none;
+    padding: 0.78em;
+    font-size: 0.7em;
+    margin-top: 2em;
+}
+
+
+@media (width > 770px) {
+    section:nth-of-type(10) {
+        grid-column-start: 3;
+        padding: 2em 2em 0 0.1em;
+    }
+}
+
+
+/*********************/
+/*****SECTION 11******/
+/*********************/
+
+section:nth-of-type(11) {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3em;
+    font-family: "Starbucks";
+    padding: 2em 2em 0 2em;
+    
+
+}
+
+section:nth-of-type(11) img { order: 1; }  
+section:nth-of-type(11) h3 { order: 2; }
+section:nth-of-type(11) a  { order: 3; }
+
+section:nth-of-type(11) img {
+    border-radius: 0.3em;
+    width: 100%;
+    height: auto;
+
+}
+
+section:nth-of-type(11) h3 {
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: var(--text-primary);
+
+}
+
+section:nth-of-type(11) a {
+    border-radius: 5em;
+    border: 0.01em solid;
+    text-align: center;
+    color: var(--text-tertairy);
+    text-decoration-line: none;
+    padding: 0.78em;
+    font-size: 0.7em;
+    margin-top: 2em;
+}
+
+
+@media (width > 770px) {
+    section:nth-of-type(11) {
+        grid-column-start: 2;
+        padding: 2em 0.1em 0 2em;
+    }
+}
+
+
+/*********************/
+/******SECTION 12******/
+/*********************/
+
+section:nth-of-type(12) {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3em;
+    font-family: "Starbucks";
+    padding: 2em 2em 0 2em;
+
+}
+
+section:nth-of-type(12) img { order: 1; }  
+section:nth-of-type(12) h3 { order: 2; }
+section:nth-of-type(12) a  { order: 3; }
+
+section:nth-of-type(12) img {
+    border-radius: 0.3em;
+    width: 100%;
+    height: auto;
+
+}
+
+section:nth-of-type(12) h3 {
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: var(--text-primary);
+
+}
+
+section:nth-of-type(12) a {
+    border-radius: 5em;
+    border: 0.01em solid;
+    text-align: center;
+    color: var(--text-tertairy);
+    text-decoration-line: none;
+    padding: 0.78em;
+    font-size: 0.7em;
+    margin-top: 2em;
+}
+
+
+@media (width > 770px) {
+    section:nth-of-type(12) {
+        grid-column-start: 3;
+        padding: 2em 2em 0 0.1em;
+    }
+}
+
+/*********************/
+/*****SECTION 13******/
+/*********************/
+
+section:nth-of-type(13) {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3em;
+    font-family: "Starbucks";
+    padding: 2em 2em 0 2em;
+
+}
+
+section:nth-of-type(13) img { order: 1; }  
+section:nth-of-type(13) h3 { order: 2; }
+section:nth-of-type(13) a  { order: 3; }
+
+section:nth-of-type(13) img {
+    border-radius: 0.3em;
+    width: 100%;
+    height: auto;
+
+}
+
+section:nth-of-type(13) h3 {
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: var(--text-primary);
+
+}
+
+section:nth-of-type(13) a {
+    border-radius: 5em;
+    border: 0.01em solid;
+    text-align: center;
+    color: var(--text-tertairy);
+    text-decoration-line: none;
+    padding: 0.78em;
+    font-size: 0.7em;
+    margin-top: 2em;
+}
+
+
+@media (width > 770px) {
+    section:nth-of-type(13) {
+        grid-column-start: 2;
+        padding: 2em 0.1em 0 2em;
+    }
+}
+
+
+/*********************/
+/*****SECTION 14******/
+/*********************/
+
+section:nth-of-type(14) {
+    display: flex;
+    font-family: "Starbucks";
+    padding: 1em 1em 0em 0em;
+
+
+}
+
+section:nth-of-type(14) h3 {
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: var(--text-primary);
+}
+
+section:nth-of-type(14) p {
+    text-align: left;
+    margin: 2.50em;
+    margin-top: 8em;
+    font-family: "Starbucks";
+    color: var(--text-primary);
+    font-size: 0.6em;
+    font-weight: 400;
+    grid-row-start:3;
+    opacity: 60%;
+}
+
+
+@media (width > 770px) {
+    section:nth-of-type(14) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        margin:0;
+    }
+}
+
+
+/*********************/
+/*****SECTION 15******/
+/*********************/
+
+section:nth-of-type(15) {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    grid-template-rows: 1em;
+    font-family: "Starbucks";
+    padding-right: 1.9em;
+    padding-left: 1em;
+
+}
+
+section:nth-of-type(15) img  {
+    grid-column-start: 1;
+    width: 2.5em;
+    
+} 
+
+section:nth-of-type(15) h3 {
+    font-size: 0.6em;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: var(--text-primary);
+    grid-column-start: 2;
+}
+
+section:nth-of-type(15) p  {
+    grid-column-start: 2;
+    font-size: 0.6em;
+    opacity: 60%;
+    color: var(--text-primary);
+} 
+
+
+@media (width > 770px) {
+    section:nth-of-type(15) {
+        grid-template-columns: 0.3fr 1fr;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        padding-right: 1.9em;
+        padding-left: 2em;
+    }
+
+    section:nth-of-type(15) img  {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        width: 4em; 
+    }    
+}
+
+
+/*********************/
+/*****SECTION 16******/
+/*********************/
+
+section:nth-of-type(16) {
+    padding-top: 4em;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    grid-template-rows: 1em;
+    font-family: "Starbucks";
+    padding-right: 1.9em;
+    padding-left: 1em;
+
+}
+
+section:nth-of-type(16) img  {
+    grid-column-start: 1;
+    width: 2.5em;
+    
+} 
+
+section:nth-of-type(16) h3 {
+    font-size: 0.6em;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: var(--text-primary);
+    grid-column-start: 2;
+}
+
+section:nth-of-type(16) p  {
+    grid-column-start: 2;
+    font-size: 0.6em;
+    opacity: 60%;
+    color: var(--text-primary);
+} 
+
+
+@media (width > 770px) {
+    section:nth-of-type(16) {
+        grid-template-columns: 0.3fr 1fr;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        padding-right: 1.9em;
+        padding-left: 2em;
+    }
+
+    section:nth-of-type(16) img  {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        width: 4em; 
+    }    
+}
+
+
+/*********************/
+/*****SECTION 17******/
+/*********************/
+
+section:nth-of-type(17) {
+    padding-top: 4em;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    grid-template-rows: 1em;
+    font-family: "Starbucks";
+    padding-right: 1.9em;
+    padding-left: 1em;
+
+}
+
+section:nth-of-type(17) img  {
+    grid-column-start: 1;
+    width: 2.5em;
+    
+} 
+
+section:nth-of-type(17) h3 {
+    font-size: 0.6em;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: var(--text-primary);
+    grid-column-start: 2;
+}
+
+section:nth-of-type(17) p  {
+    grid-column-start: 2;
+    font-size: 0.6em;
+    opacity: 60%;
+    color: var(--text-primary);
+} 
+
+@media (width > 770px) {
+    section:nth-of-type(17) {
+        grid-template-columns: 0.3fr 1fr;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        padding-right: 1.9em;
+        padding-left: 2em;
+    }
+
+    section:nth-of-type(17) img  {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        width: 4em; 
+    }    
+}
+
+
+
+
+/*********************/
+/*****SECTION 18******/
+/*********************/
+
+section:nth-of-type(18) {
+    padding-top: 4em;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    grid-template-rows: 1em;
+    font-family: "Starbucks";
+    padding-right: 1.9em;
+    padding-left: 1em;
+    padding-bottom: 3em;
+
+}
+
+section:nth-of-type(18) img  {
+    grid-column-start: 1;
+    width: 2.5em;
+    
+} 
+
+section:nth-of-type(18) h3 {
+    font-size: 0.6em;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: var(--text-primary);
+    grid-column-start: 2;
+}
+
+section:nth-of-type(18) p  {
+    grid-column-start: 2;
+    font-size: 0.6em;
+    opacity: 60%;
+    color: var(--text-primary);
+} 
+
+@media (width > 770px) {
+    section:nth-of-type(18) {
+        grid-template-columns: 0.3fr 1fr;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        padding-right: 1.9em;
+        padding-left: 2em;
+    }
+
+    section:nth-of-type(18) img  {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        width: 4em; 
+    }    
+}

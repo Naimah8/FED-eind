@@ -1,0 +1,627 @@
+
+
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+	box-sizing:border-box;  
+	
+  }
+  @font-face {
+	font-family: "Starbucks";
+	src: url(../fonts/49f6eaa3630c71e3-s.p.woff);
+    font-weight: 700;
+    /* dikke */
+  }
+
+  @font-face {
+	font-family: "Starbucks";
+	src: url(../fonts/564f79e771d74376-s.p.woff2);
+    font-weight: 350;
+    /* dunne*/
+  }
+
+  @font-face {
+	font-family: "Starbucks";
+	src: url(../fonts/6aebdeb6fff3abca-s.p.woff);
+    font-weight: 600;
+    /* half*/
+  }
+
+  @font-face {
+	font-family: "Starbucks";
+	src: url(../fonts/fb96a0656cdf22e3-s.p.woff);
+    font-weight: 400;
+    /* normaal*/
+  }
+  @font-face {
+	font-family: "Starbucks raar";
+	src: url(../fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2);
+    /* rare*/
+  }
+  
+
+  
+  /*********************/
+  /* CUSTOM PROPERTIES */
+  /*********************/
+
+
+    
+  :root{
+    --text-primary: #000000;
+	  --text-secondary: #ffffff;
+    --text-tertairy:#006242;
+    --text-header:#000000;
+    --text-footer:#ffffff;
+    --main-background-primary: #ffffff;
+    --main-background-secondary:#f7f7f7;
+    --section-background-primary:#f7f7f7;
+    --section-background-secondary:#01754b;
+	  --section-background-tertairy:#006242;
+    --button-primary:#ffffff;
+	  --button-secondary:#006242;
+    --button-summary:#ffffff;
+    --nav-background:#ffffff;
+	  --focus:#ff0000;
+	  --footer:#1e3932;
+	  --header:#ffffff;
+    --header-lijn:#dcd9d9;
+
+  }
+
+  @media (prefers-color-scheme: dark) {
+    
+    :root{
+    --text-primary: #ffffff;
+	  --text-secondary: #000000;
+    --text-tertairy:#ffffff;
+    --text-header:#000000;
+    --text-footer:#ffffff;
+    --main-background-primary: #430202;
+	  --main-background-secondary:#430202;
+    --section-background-primary:#006242;
+    --section-background-secondary:#fef4d6;
+    --section-background-tertairy:#fef4d6;
+    --button-primary:#006242;
+	  --button-secondary:#fef4d6;
+    --button-summary:#ffffff;
+    --nav-background:#ffffff;
+	  --focus:#ff0000;
+	  --footer:#006242;
+	  --header:#ffffff;
+    --header-lijn:#dcd9d9;
+    
+
+
+    }
+
+  }
+
+  /*********************/
+  /****HOVER STATES*****/
+  /*********************/
+  
+  
+  a {
+    color: var(--focus);         
+    padding: 0.5em 0.2em;     
+    border-radius: 0.5em;
+    transition: all 0.2s ease;
+  }
+  
+ 
+  a:hover {
+    color: var(--focus);         
+    outline: 0.2em solid var(--focus); 
+    outline-offset: 0.3em;
+  }
+  
+  
+  a:focus {
+    opacity: 0.8;           
+    text-decoration-style: wavy;
+  }
+  
+  
+  a:active {
+    opacity: 0.5;
+    transform: scale(0.98);
+  }
+
+  /* bron:* https://dev.to/daaahailey/css-basic-8-hover-active-focus-4d78 Button states */
+
+
+  html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* alleen hier */
+  }
+
+  /* chatgpt.com - Hoe fix ik de extra ruimte als ik het html element inspecteer? */
+  /****************/
+  /* JOUW STYLING */
+  /****************/
+  
+  span.lightmode {
+    display: none;
+  }
+
+  header {
+	background-color: var(--header);
+	height: 4em;
+  color: var(--text-header); 
+	justify-content: space-between;
+	align-items: center;
+  font-family: "Starbucks";
+	padding: 0.9em;
+	display:flex;
+	position:sticky;
+	top:0;
+  z-index: 10;
+  border-bottom: 0.05em solid var(--header-lijn);
+  
+  
+  }
+
+  header nav {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+  }
+
+  header nav ul:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 2em;
+    color: var(--text-header);
+	  position:fixed;
+	  background-color: var(--header);
+	  left:0;
+	  right:0;
+	  top:9%;
+	  bottom:0;
+    padding: 1em;
+	  translate:100% 0%;
+	  transition:translate .3s;
+    font-weight: 400;
+    font-size: 0.8em;
+    list-style: none;
+    
+  }
+
+  header nav ul img{
+    width: 1.3em; 
+    margin-right: 0.5em;
+  }
+
+  header img {
+	  max-height: 2.5em;
+  }
+
+  header nav button {
+	  position:relative;
+    max-width: 1em;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    font: inherit;
+    border-radius: 0;
+    appearance: none;
+	  z-index:100;
+    /* - https://gist.github.com/zastrow/bb43d2b256d52738e0ffdee7f825e79f  - hoe haal ik preset styling van een button weg. */
+  }
+  
+  header a {
+    color: var(--text-header);
+    text-decoration-line: none;
+  }
+
+  header nav.toonMenu ul {
+	  translate:0% 0%;
+  }
+
+  header nav.toonMenu button img {
+	  content:url(../images/hamburger-icon-closed.png);
+  }
+
+
+
+  /* Hamburger menu bron: https://codepen.io/shooft/pen/NPGXJGq */
+
+@media (min-width: 1024px) { 
+
+  header {
+    display: flex;
+    justify-content: start;
+    gap: 4em;
+    font-size: 0.9em;
+  }
+
+  header img {
+	  max-height: 2.5em;
+    margin-left: 1em;
+  }
+
+/* Dit snap ik niet zo goed */
+  header nav {
+    flex-wrap: nowrap;  
+    white-space: nowrap;
+  }
+
+  header nav ul li:nth-of-type(3) {
+    display:none
+  }
+
+  header nav ul li:nth-of-type(6) {
+    display:none
+  }
+
+  header nav ul li:nth-of-type(7) {
+    display:none
+  }
+
+
+  header nav ul:nth-of-type(1){
+		  display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      gap:6em;
+      list-style: none;
+      position: static;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.7em;
+      translate: 0 0;
+      padding:0;
+      margin:0;
+      height:auto;
+
+  }
+
+  header nav ul li:nth-of-type(8) {
+    font-family: "Starbucks";
+    text-transform:none;
+    font-weight: 400;
+    margin-left: 2em;
+  }
+
+  header nav ul li:nth-of-type(9) {
+    font-family: "Starbucks";
+    text-transform:none;
+    font-weight: 400;
+  }
+
+	header nav button {
+		display: none;
+  }
+
+  header nav ul:nth-of-type(3) img {
+    width: 2.2em;
+    margin-right: 1em;
+    padding-left: 1em;
+  }
+
+
+  body {
+	margin:0;
+  }
+}
+
+@media (min-width: 1440px) {
+  header nav ul li:nth-of-type(4) {
+    display: block;
+  }
+}
+
+
+/*********************/
+/*******footer********/
+/*********************/
+
+footer { 
+  background-color: var(--footer);
+  padding:1em;
+  display:grid;
+  grid-template-columns:auto;
+  grid-template-rows: auto 1fr 1fr auto;
+  color: var(--text-footer);
+  font-family: "Starbucks";
+  font-weight: 350;
+  font-size: 0.7em;
+  height:auto;
+  gap:2em;
+
+}
+footer img {
+  max-width: 2.5em;
+  grid-column: 1;
+  grid-row: 1;
+  margin-bottom: 1em;
+}
+
+footer nav {
+  text-decoration-line: none;
+  list-style: none;
+  grid-column:1;
+  grid-row:2;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  gap:1.5em;
+}
+
+footer div{
+  grid-column: 1;
+  grid-row: 4;
+  display:flex;
+  flex-direction:row;
+  gap:2em
+}
+
+footer div img{
+  max-width: 1.5em;
+}
+
+footer ul{
+  grid-row:3;
+  grid-column:1;
+  list-style:none;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+  gap:3em;
+  font-size: 0.8em;
+}
+
+footer li{
+  opacity: 70%;
+}
+
+footer a {
+  color: var(--text-footer);
+  text-decoration-line: none;
+}
+
+/* snap ik niet goed bron:Sanne */
+summary {
+	display:flex;
+	justify-content:space-between;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  gap: 5em;
+	align-items:center;
+	cursor:pointer;
+}
+
+summary::marker {
+	/* standaard marker weg	 */
+  content:"";
+}
+
+summary::after {
+	content:"";
+	position:relative;
+	width:.5em;
+	height:.5em;
+	background-color: var(--button-primary);
+	transition:.5s;
+	
+	clip-path:polygon( 0 0, 100% 0, 50% 100%, 0 0);
+}
+
+details[open] summary::after {
+	rotate:180deg;
+	
+}
+
+@media (width > 770px) {
+  footer > ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+  footer {
+    padding: 5em;
+  }
+  footer div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
+
+  }
+}
+
+
+
+@media (width > 40em) {
+	footer {
+    display: grid;
+    grid-template-columns: 3em auto auto auto;
+    gap: 1em;
+    height: 38em;
+    padding-top: 5em;
+    padding-left: 2em;
+	
+}
+  footer img {
+    max-height: 3em;
+    max-width: 3em;
+    grid-column-start: 1;
+    grid-row-start: 1;
+
+  }
+  footer nav {
+    display:grid;
+    padding-top: 1em;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-column-end: 5;
+    grid-template-columns: 10em 10em 10em;
+    gap:3em;
+  }
+
+  footer div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+
+/* directe child van de footer */
+  footer > ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+  }
+
+	
+	details::details-content {
+		content-visibility:visible;
+	}
+	
+	summary {
+		cursor:default;
+	}
+	
+	summary::after {
+		display:none;
+	}
+}
+
+@media (min-width: 1440px) {
+  footer div {
+    display: flex;
+    justify-content: left;
+    margin-left: 5em;
+  }
+  footer > ul{
+    display: flex;
+    justify-content: left;
+    margin-left: 6em;
+  }
+  footer {
+    gap:2em;
+  }
+}
+
+/*********************/
+/***sticky nav********/
+/*********************/
+
+body > nav {
+  position: sticky;
+	bottom: 0;
+	width: 100%;
+  height: 3em;
+	background: var(--nav-background);
+	z-index: 999;
+  padding-top: 0.5em;
+}
+
+
+body > nav ul{
+  display:flex;
+  justify-content: center;
+  gap: 3em;
+  align-items: center;
+  margin: 0%;
+  list-style-type: "";
+  padding:0%;
+  font-size: 0.5em;
+} 
+
+body > nav ul a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-header);
+  justify-content: center;
+  font-family: "Starbucks";
+  text-decoration-line: none;
+}
+
+body > nav ul li:last-child a {
+  color: var(--text-header);
+}
+
+
+body > nav ul img {
+  max-width: 3em;
+  
+}
+
+body > nav ul li:last-child img {
+  max-width: 2.2em;
+}
+
+/*********************/
+/***Summary*****/
+/*********************/
+
+/* snap ik niet goed bron:Sanne */
+summary {
+	display:flex;
+	justify-content:space-between;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  gap: 5em;
+	align-items:center;
+	cursor:pointer;
+}
+
+summary::marker {
+	/* standaard marker weg	 */
+  content:"";
+}
+
+summary::after {
+	content:"";
+	position:relative;
+	width:.5em;
+	height:.5em;
+	background-color: var(--button-summary);
+	transition:.5s;
+	
+	clip-path:polygon( 0 0, 100% 0, 50% 100%, 0 0);
+}
+
+details[open] summary::after {
+	rotate:180deg;
+	
+}
+
+@media (width > 770px) {
+  body > nav {  
+  display: none;
+  }
+}
+
+/* Snap ik niet goed bron:Sanne */
+
+
+
+/* @media (prefers-color-scheme: dark){
+
+
+	
+
