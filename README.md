@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Naimah sambo
 
   #### Je startniveau:
- "Ik zit in de blauwe piste, maar ik vind het vormgeven van een website enorm leuk. Zodra ik iets kan doen op het gebied van design, wordt het proces voor mij meteen veel fijner."
+ Ik zit in de blauwe piste, maar ik vind het vormgeven van een website enorm leuk. Zodra ik iets kan doen op het gebied van design, wordt het proces voor mij meteen veel fijner.
 
   #### Je focus:
  Ik denk toch responsive en service laag. Als ik goed begrijp wat met service laag bedoelt wordt is het de vormgeving en de look van de website. Dat vind ik belangrijk.
@@ -138,7 +138,7 @@ hfbbhjebhjbrbfhjbef
 
   Ook vond ik het lastig om te werken met grid. Het omdraaien van de elementen in de sections vond ik enorm lastig ik heb er uiteindelijk wel iets voor gevonden.
 
-  <img src="/readme-images/screenshot-omdraaien-elementen-voortgang1.png" width="375px" alt="screenshot code">
+  <img src="/readme-images/screenshot-omdraaien-elementen.png" width="375px" alt="screenshot code">
 
 
   ### Agenda voor meeting
@@ -215,9 +215,9 @@ Naimah -
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - ik heb geleerd hoe ik de eerste section de hele breedte kan laten in nemen
+  - ik heb geleerd ik mijn sections responsive kan maken
+  - ik heb geleerd dat padding op de main niet de oplossing is voor mijn probleem
 - ...
 
 </details>
@@ -385,8 +385,11 @@ Naimah:
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+- https://codepen.io/shooft/pen/XJmEOyb flex box tekst onder plaatje.
+- chatgpt.com Hoe maak ik een link in een stuk tekst. 
+- https://dev.to/daaahailey/css-basic-8-hover-active-focus-4d78 Button state
+- https://www.w3schools.com/cssref/pr_text_text-transform.php - hoe maak ik text uppercase in css.
+- https://gist.github.com/zastrow/bb43d2b256d52738e0ffdee7f825e79f  - hoe haal ik preset styling van een button weg.
+- Chatgpt.com -Hoe fix ik de extra ruimte als ik het html element inspecteer? 
 
 </details>
