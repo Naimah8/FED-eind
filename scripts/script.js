@@ -126,25 +126,4 @@ window.addEventListener('load', initSnow);
     
 }
 
-/*********************/
-/*******HEADER********/
-/*********************/
-// begrijp ik niet //
-/* Bron:chatgpt.com - Hoe voeg ik een transition toe aan de header als ik scroll */
 
-let lastScroll = 0;
-const navbar = document.querySelector('header');
-
-window.addEventListener('scroll', () => {
-  const currentScroll = window.pageYOffset;
-
-  if (currentScroll > lastScroll) {
-    // naar beneden scroll → verbergen
-    navbar.style.transform = "translateY(-100%)";
-  } else {
-    // naar boven scroll → tonen
-    navbar.style.transform = "translateY(0)";
-  }
-
-  lastScroll = currentScroll;
-});

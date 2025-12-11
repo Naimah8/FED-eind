@@ -232,11 +232,8 @@ Naimah -
 
   -Links hebben betere namen gekregen, je weet nu doormiddel van de aria label waar je op klikt. Eerder was dit een "ontdek meer" nu een "Ontdek meer over de Starbucks geschiedenis".
 
-  -Global code: Enorm veel errors in HTML, en geen duidelijke titles per pagina. De taal veranderd wel mee met de pagina:
-  <img src="readme-images/globalcode-screenshot1.png" alt="Kiest voor EN ende taalveranderd mee">
-  <img src="readme-images/globalcode-screenshot2.png" alt="Kiest voor NL ende taalveranderd mee">
 
-  -Keyboard: Het is niet duidelijk genoeg waar de focus op staat door kleur contrast:<img src="readme-images/Keyboard-screenshot1.png" alt="Geselecteerde button met weinig contrast">
+  -Keyboard: Het is nu wel duidelijk genoeg waar de focus op staat door kleur contrast de focus heeft een duidelijke rode kleur inplaats van het licht groenen
 
   -Mobile and touch: De website is extreem goed voor mobiel gebruik, en gebruikt grote duidelijke knoppen met genoeg afstand: 
   <img src="readme-images/mobile-and-touch-screenshot1.png" alt="mobile screen met een grote knop en witruimte">

@@ -67,6 +67,7 @@
 	  --footer:#1e3932;
 	  --header:#ffffff;
     --header-lijn:#dcd9d9;
+
   }
 
   @media (prefers-color-scheme: dark) {
@@ -168,8 +169,6 @@
 	top:0;
   z-index: 10;
   border-bottom: 0.05em solid var(--header-lijn);
-  transition: transform 0.4s ease;
-  /* Bron:chatgpt.com - Hoe voeg ik een transition toe aan de header als ik scroll */
   }
 
   header nav {
@@ -209,7 +208,7 @@
   }
 
   header nav button {
-	  position:relative;  /* snap ik niet so goed */
+	  position:relative;
     background-color: transparent;
     border: none;
     margin: 0;
@@ -283,7 +282,7 @@
       align-items: center;
       gap:6em;
       list-style: none;
-      position: static;  /* snap ik niet so goed */
+      position: static;
       font-weight: 600;
       text-transform: uppercase; /* * bron: https://www.w3schools.com/cssref/pr_text_text-transform.php - hoe maak ik text uppercase in css. */
       font-size: 0.7em;
@@ -415,7 +414,7 @@ summary::marker {
 
 summary::after {
 	content:"";
-	position:relative;  /* snap ik niet so goed */
+	position:relative;
 	width:.5em;
 	height:.5em;
 	background-color: var(--button-primary);
@@ -532,7 +531,7 @@ details[open] summary::after {
 /*********************/
 
 body > nav { /* Selector snap ik niet goed  */
-  position: sticky;  /* snap ik niet so goed */
+  position: sticky;
 	bottom: 0;
 	width: 100%;
   height: 3em;
