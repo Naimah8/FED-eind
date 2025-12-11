@@ -132,10 +132,16 @@
   /* bron:* https://dev.to/daaahailey/css-basic-8-hover-active-focus-4d78 Button states */
 
 
+/*********************/
+/******ALGEMEEN********/
+/*********************/
+
+
   html {
     margin: 0;
     padding: 0;
   }
+
   
   body {
     margin: 0;
@@ -144,6 +150,7 @@
   }
 
   /* chatgpt.com - Hoe fix ik de extra ruimte als ik het html element inspecteer? */
+
   /****************/
   /* JOUW STYLING */
   /****************/
@@ -165,8 +172,6 @@
 	top:0;
   z-index: 10;
   border-bottom: 0.05em solid var(--header-lijn);
-  
-  
   }
 
   header nav {
@@ -216,7 +221,7 @@
     border-radius: 0;
     appearance: none;
 	  z-index:100;
-    /* - https://gist.github.com/zastrow/bb43d2b256d52738e0ffdee7f825e79f  - hoe haal ik preset styling van een button weg. */
+    /* bron: https://gist.github.com/zastrow/bb43d2b256d52738e0ffdee7f825e79f  - hoe haal ik preset styling van een button weg. */
   }
   
   button img {
@@ -236,8 +241,6 @@
 	  content:url(../images/hamburger-icon-closed.png);
   }
 
-
-
   /* Hamburger menu bron: https://codepen.io/shooft/pen/NPGXJGq */
 
 @media (min-width: 1024px) { 
@@ -245,7 +248,7 @@
   header {
     display: flex;
     justify-content: start;
-    gap: 4em;
+    gap: 1em;
     font-size: 0.9em;
 
   }
@@ -262,7 +265,7 @@
     white-space: nowrap;
   }
 
-  header nav ul li:nth-of-type(3) {
+  header nav ul li:nth-of-type(4) {
     display:none
   }
 
@@ -284,13 +287,12 @@
       list-style: none;
       position: static;
       font-weight: 600;
-      text-transform: uppercase;
+      text-transform: uppercase; /* * bron: https://www.w3schools.com/cssref/pr_text_text-transform.php - hoe maak ik text uppercase in css. */
       font-size: 0.7em;
       translate: 0 0;
       padding:0;
       margin:0;
       height:auto;
-
   }
 
   header nav ul li:nth-of-type(8) {
@@ -449,8 +451,6 @@ details[open] summary::after {
   }
 }
 
-
-
 @media (width > 40em) {
 	footer {
     display: grid;
@@ -533,7 +533,7 @@ details[open] summary::after {
 /***sticky nav********/
 /*********************/
 
-body > nav {
+body > nav { /* Selector snap ik niet goed  */
   position: sticky;
 	bottom: 0;
 	width: 100%;
@@ -569,50 +569,12 @@ body > nav ul li:last-child a {
   color: var(--text-header);
 }
 
-
 body > nav ul img {
   max-width: 3em;
-  
 }
 
 body > nav ul li:last-child img {
   max-width: 2.2em;
-}
-
-/*********************/
-/***Summary*****/
-/*********************/
-
-/* snap ik niet goed bron:Sanne */
-summary {
-	display:flex;
-	justify-content:space-between;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  gap: 5em;
-	align-items:center;
-	cursor:pointer;
-}
-
-summary::marker {
-	/* standaard marker weg	 */
-  content:"";
-}
-
-summary::after {
-	content:"";
-	position:relative;
-	width:.5em;
-	height:.5em;
-	background-color: var(--button-summary);
-	transition:.5s;
-	
-	clip-path:polygon( 0 0, 100% 0, 50% 100%, 0 0);
-}
-
-details[open] summary::after {
-	rotate:180deg;
-	
 }
 
 @media (width > 770px) {
@@ -620,12 +582,8 @@ details[open] summary::after {
   display: none;
   }
 }
+/* bron: https://codepen.io/shooft/pen/XJmEOyb flexbox - tekst onder plaatje. */
 
-/* Snap ik niet goed bron:Sanne */
-
-
-
-/* @media (prefers-color-scheme: dark){
 
 
 	
