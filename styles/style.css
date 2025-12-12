@@ -125,7 +125,7 @@
     opacity: 0.5;
     transform: scale(0.98);
   }
-
+  /* snap ik niet heel goed, daarom bron gebruikt */
   /* bron:* https://dev.to/daaahailey/css-basic-8-hover-active-focus-4d78 Button states */
 
 
@@ -143,7 +143,7 @@
   body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* alleen hier */
+    overflow-x: hidden; /* alleen hier */ 
   }
 
   /* chatgpt.com - Hoe fix ik de extra ruimte als ik het html element inspecteer? */
@@ -183,7 +183,7 @@
     justify-content: left;
     gap: 2em;
     color: var(--text-header);
-	  position:fixed;
+	  position:fixed;/* snap ik niet goed */
 	  background-color: var(--header);
 	  left:0;
 	  right:0;
@@ -208,15 +208,15 @@
   }
 
   header nav button {
-	  position:relative;
+	  position:relative; /* snap ik niet goed */
     background-color: transparent;
     border: none;
     margin: 0;
     padding: 0;
-    text-align: inherit;
-    font: inherit;
+    text-align: inherit;  /* snap ik niet goed */
+    font: inherit; /* snap ik niet goed */
     border-radius: 0;
-    appearance: none;
+    appearance: none; /* snap ik niet goed */
 	  z-index:100;
     /* bron: https://gist.github.com/zastrow/bb43d2b256d52738e0ffdee7f825e79f  - hoe haal ik preset styling van een button weg. */
   }
@@ -414,7 +414,7 @@ summary::marker {
 
 summary::after {
 	content:"";
-	position:relative;
+	position:relative; /* snap ik niet goed */
 	width:.5em;
 	height:.5em;
 	background-color: var(--button-primary);
@@ -496,8 +496,7 @@ details[open] summary::after {
 
   }
 
-	
-	details::details-content {
+  details::details-content {
 		content-visibility:visible;
 	}
 	
